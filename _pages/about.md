@@ -26,12 +26,12 @@ social: false  # includes social icons at the bottom of the page
 ## 🛠️ 我的技能栈
 | 技能类型       | 具体能力                                                                 |
 |----------------|--------------------------------------------------------------------------|
-| 运营能力       | 内容运营（短视频/漫剧/图书IP） | 渠道管理（抖音/快手/B站） | 用户画像分析 | 流量矩阵搭建 |
+| 运营能力       | 内容运营 | 渠道管理 | 画像分析 | 矩阵搭建 |
 | 工具技能       | ![PPT](https://img.shields.io/badge/PPT-熟练-blue) ![Excel](https://img.shields.io/badge/Excel-数据分析-yellow) ![PS/Ai](https://img.shields.io/badge/PS%2FAi-设计制作-purple) |
 | 视频与动画     | ![Pr](https://img.shields.io/badge/Pr-视频剪辑-red) ![Ae/An](https://img.shields.io/badge/Ae%2FAn-动画制作-green) |
 
 
-
+ <img src="https://user-images.githubusercontent.com/543384/192227995-fdb3a693-2f68-4dc4-b9bd-06053066322f.png" width = "800" align="middle" />
 
 ## 📌 实习经历：聚焦内容运营与商业变现
 **1. 上海阅文信息技术有限公司（2025.03-2025.07）| 渠道内容运营**
