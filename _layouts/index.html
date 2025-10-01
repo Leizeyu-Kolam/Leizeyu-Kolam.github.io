@@ -11,9 +11,9 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#3B82F6',
-                        secondary: '#6366F1',
-                        accent: '#10B981',
+                        primary: '#5E2CA5', // 南京大学主紫色
+                        secondary: '#800080', // 深紫色
+                        accent: '#C19A6B', // 南京大学金色点缀
                         dark: '#1E293B',
                         light: '#F8FAFC'
                     },
@@ -62,13 +62,13 @@
                 <a href="#experience" class="hover:text-primary transition-colors">实习经历</a>
                 <a href="#contact" class="hover:text-primary transition-colors">联系方式</a>
             </div>
-            <button class="md:hidden text-gray-600 focus:outline-none">
+            <button class="md:hidden text-gray-600 focus:outline-none" id="mobile-menu-button">
                 <i class="fa fa-bars text-xl"></i>
             </button>
         </div>
     </nav>
 
-    <!-- 移动端菜单 (默认隐藏) -->
+    <!-- 移动端菜单 -->
     <div id="mobile-menu" class="fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 md:hidden">
         <div class="p-4 flex justify-end">
             <button id="close-menu" class="text-gray-600 focus:outline-none">
@@ -84,7 +84,7 @@
     </div>
 
     <!-- 头部横幅 -->
-    <header class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-blue-50 to-indigo-50">
+    <header class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-purple-50 to-indigo-50">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
                 <div class="w-full md:w-1/2 text-center md:text-left">
@@ -112,11 +112,11 @@
                 </div>
                 <div class="w-full md:w-1/2 flex justify-center">
                     <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-xl overflow-hidden shadow-xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
-                        <img src="https://github.com/Leizeyu-Kolam/Leizeyu-Kolam.github.io/blob/master/assets/img/avatar1.jpg" 
-                             alt="照片" 
+                        <img src="https://github.com/Leizeyu-Kolam/Leizeyu-Kolam.github.io/blob/master/assets/img/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%8A%B6%E6%80%81.jpg?raw=true" 
+                             alt="一张照片" 
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                            <p class="text-white p-4 text-center w-full">This is me.</p>
+                            <p class="text-white p-4 text-center w-full">This is me </p>
                         </div>
                     </div>
                 </div>
@@ -138,18 +138,9 @@
             <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8">
                 <div class="space-y-6">
                     <div class="flex items-start gap-4">
-                        <div class="bg-blue-100 p-3 rounded-full text-primary">
+                        <div class="bg-purple-100 p-3 rounded-full text-primary">
                             <i class="fa fa-graduation-cap text-xl"></i>
                         </div>
-                                          <div class="flex items-start gap-4">
-                        <div class="bg-purple-100 p-3 rounded-full text-secondary">
-                            <i class="fa fa-map-marker text-xl"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold mb-2">所在地</h3>
-                            <p class="text-gray-700">南京</p>
-                        </div>
-                    </div>
                         <div>
                             <h3 class="text-xl font-semibold mb-2">教育背景</h3>
                             <ul class="space-y-2 text-gray-700">
@@ -166,7 +157,17 @@
                     </div>
                     
                     <div class="flex items-start gap-4">
-                        <div class="bg-green-100 p-3 rounded-full text-accent">
+                        <div class="bg-purple-100 p-3 rounded-full text-primary">
+                            <i class="fa fa-map-marker text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">所在地</h3>
+                            <p class="text-gray-700">南京</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="bg-purple-100 p-3 rounded-full text-primary">
                             <i class="fa fa-envelope text-xl"></i>
                         </div>
                         <div>
@@ -200,33 +201,33 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- 运营能力 -->
                 <div class="bg-white rounded-xl shadow-md p-6 card-hover">
-                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-5">
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-5">
                         <i class="fa fa-line-chart text-2xl text-primary"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-4">运营能力</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">内容运营</span>
-                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">渠道管理</span>
-                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">画像分析</span>
-                        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm">矩阵搭建</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm">内容运营</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm">渠道管理</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm">画像分析</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm">矩阵搭建</span>
                     </div>
                 </div>
                 
                 <!-- 工具技能 -->
                 <div class="bg-white rounded-xl shadow-md p-6 card-hover">
                     <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-5">
-                        <i class="fa fa-wrench text-2xl text-secondary"></i>
+                        <i class="fa fa-wrench text-2xl text-primary"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-4">工具技能</h3>
                     <div class="space-y-3">
                         <div class="flex items-center gap-3">
-                            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm flex items-center gap-1">
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm flex items-center gap-1">
                                 <i class="fa fa-file-powerpoint-o"></i> PPT
                             </span>
                             <span class="text-gray-500">熟练</span>
                         </div>
                         <div class="flex items-center gap-3">
-                            <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm flex items-center gap-1">
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm flex items-center gap-1">
                                 <i class="fa fa-file-excel-o"></i> Excel
                             </span>
                             <span class="text-gray-500">数据分析</span>
@@ -242,19 +243,19 @@
                 
                 <!-- 视频与动画 -->
                 <div class="bg-white rounded-xl shadow-md p-6 card-hover">
-                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-5">
-                        <i class="fa fa-film text-2xl text-accent"></i>
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-5">
+                        <i class="fa fa-film text-2xl text-primary"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-4">视频与动画</h3>
                     <div class="space-y-3">
                         <div class="flex items-center gap-3">
-                            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm flex items-center gap-1">
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm flex items-center gap-1">
                                 <i class="fa fa-video-camera"></i> Pr
                             </span>
                             <span class="text-gray-500">视频剪辑</span>
                         </div>
                         <div class="flex items-center gap-3">
-                            <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm flex items-center gap-1">
+                            <span class="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm flex items-center gap-1">
                                 <i class="fa fa-magic"></i> Ae/An
                             </span>
                             <span class="text-gray-500">动画制作</span>
@@ -278,7 +279,7 @@
                 <!-- 经历1 -->
                 <div class="bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="md:flex">
-                        <div class="md:w-1/3 bg-gradient-to-br from-blue-600 to-indigo-700 p-6 text-white">
+                        <div class="md:w-1/3 bg-gradient-to-br from-purple-700 to-indigo-800 p-6 text-white">
                             <div class="text-sm opacity-80 mb-1">2025.03-2025.07</div>
                             <h3 class="text-xl font-bold mb-2">上海阅文信息技术有限公司</h3>
                             <p class="opacity-90">渠道内容运营</p>
@@ -305,7 +306,7 @@
                 <!-- 经历2 -->
                 <div class="bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="md:flex">
-                        <div class="md:w-1/3 bg-gradient-to-br from-purple-600 to-pink-700 p-6 text-white">
+                        <div class="md:w-1/3 bg-gradient-to-br from-purple-800 to-pink-900 p-6 text-white">
                             <div class="text-sm opacity-80 mb-1">2023.09-2024.06</div>
                             <h3 class="text-xl font-bold mb-2">上海人民出版社（光启书局）</h3>
                             <p class="opacity-90">内容运营</p>
@@ -332,7 +333,7 @@
                 <!-- 经历3 -->
                 <div class="bg-white rounded-xl shadow-md overflow-hidden">
                     <div class="md:flex">
-                        <div class="md:w-1/3 bg-gradient-to-br from-green-600 to-teal-700 p-6 text-white">
+                        <div class="md:w-1/3 bg-gradient-to-br from-purple-900 to-indigo-950 p-6 text-white">
                             <div class="text-sm opacity-80 mb-1">2023.06-2023.08</div>
                             <h3 class="text-xl font-bold mb-2">丰贺信息科技（先胜业财）</h3>
                             <p class="opacity-90">内容运营</p>
@@ -367,7 +368,7 @@
             <div class="max-w-md mx-auto bg-white rounded-2xl shadow-lg p-8">
                 <div class="space-y-6">
                     <div class="flex items-center gap-4 p-4 border border-gray-100 rounded-lg hover:border-primary/30 transition-colors">
-                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-primary">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-primary">
                             <i class="fa fa-envelope text-xl"></i>
                         </div>
                         <div>
@@ -377,7 +378,7 @@
                     </div>
                     
                     <div class="flex items-center gap-4 p-4 border border-gray-100 rounded-lg hover:border-primary/30 transition-colors">
-                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-accent">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-primary">
                             <i class="fa fa-phone text-xl"></i>
                         </div>
                         <div>
@@ -389,16 +390,16 @@
                     <div class="pt-4">
                         <h3 class="font-medium mb-4 text-center">或者通过社交媒体联系我</h3>
                         <div class="flex justify-center gap-6">
-                            <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-50 hover:text-primary transition-colors">
+                            <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-purple-50 hover:text-primary transition-colors">
                                 <i class="fa fa-weixin text-xl"></i>
                             </a>
-                            <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-50 hover:text-primary transition-colors">
+                            <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-purple-50 hover:text-primary transition-colors">
                                 <i class="fa fa-weibo text-xl"></i>
                             </a>
-                            <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-50 hover:text-primary transition-colors">
+                            <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-purple-50 hover:text-primary transition-colors">
                                 <i class="fa fa-linkedin text-xl"></i>
                             </a>
-                            <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-blue-50 hover:text-primary transition-colors">
+                            <a href="#" class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-gray-600 hover:bg-purple-50 hover:text-primary transition-colors">
                                 <i class="fa fa-github text-xl"></i>
                             </a>
                         </div>
@@ -412,13 +413,13 @@
     <footer class="bg-dark text-white py-10">
         <div class="container mx-auto px-4 text-center">
             <p class="mb-4">© 2024 雷泽宇. 保留所有权利.</p>
-            <p class="text-gray-400 text-sm">使用 Jekyll 与 Tailwind CSS 构建</p>
+            <p class="text-gray-400 text-sm">南京大学 | 使用 Jekyll 与 Tailwind CSS 构建</p>
         </div>
     </footer>
 
     <script>
         // 移动端菜单控制
-        document.querySelector('button.md\\:hidden').addEventListener('click', function() {
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.remove('translate-x-full');
         });
         
@@ -484,3 +485,4 @@
     </script>
 </body>
 </html>
+    
