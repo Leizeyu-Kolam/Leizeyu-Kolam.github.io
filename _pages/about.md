@@ -35,7 +35,7 @@ social: false  # includes social icons at the bottom of the page
 | 视频与动画     | ![Pr](https://img.shields.io/badge/Pr-视频剪辑-red) ![Ae/An](https://img.shields.io/badge/Ae%2FAn-动画制作-green) |
 
 
- <img src="https://user-images.githubusercontent.com/assets/img/研究生状态.jpg" width = "800" align="middle" />
+ <img src="[https://user-images.githubusercontent.com/assets/img/研究生状态.jpg](https://github.com/Leizeyu-Kolam/Leizeyu-Kolam.github.io/blob/master/assets/img/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%8A%B6%E6%80%81.jpg)" width = "800" align="middle" />
 
 ## 📌 **实习经历**
 **1. 上海阅文信息技术有限公司（2025.03-2025.07）| 渠道内容运营**
