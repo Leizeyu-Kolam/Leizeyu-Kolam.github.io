@@ -31,7 +31,7 @@ social: false  # includes social icons at the bottom of the page
 | 视频与动画     | ![Pr](https://img.shields.io/badge/Pr-视频剪辑-red) ![Ae/An](https://img.shields.io/badge/Ae%2FAn-动画制作-green) |
 
 
- <img src="https://user-images.githubusercontent.com/543384/192227995-fdb3a693-2f68-4dc4-b9bd-06053066322f.png" width = "800" align="middle" />
+ <img src="https://user-images.githubusercontent.com/assets/img/研究生状态.jpg" width = "800" align="middle" />
 
 ## 📌 实习经历：聚焦内容运营与商业变现
 **1. 上海阅文信息技术有限公司（2025.03-2025.07）| 渠道内容运营**
