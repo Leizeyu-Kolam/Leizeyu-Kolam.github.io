@@ -2,24 +2,24 @@
 layout: about
 title: About
 permalink: /
-subtitle: 
+subtitle: Welcome to my fucking mind.
 profile:
   align: right
-  image: avatar.jpg
+  image: avatar1.jpg
   image_circular: true # crops the image to make it circular
   address: 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
 ---
 
 
 
 # 👋 你好！我是雷泽宇
-- 📍 坐标：上海 | 籍贯：湖南省永州市
-- 🎓 教育：南京大学数字营销传播硕士| 华东政法大学文化产业管理本科
-- 📱 联系：[邮箱](mailto:Eazfan99@163.com) | [电话](tel:17374651500) | [GitHub](https://github.com/Eazfan99)
+- 📍 坐标：上海 | 籍贯：湖南
+- 🎓 教育：南京大学-数字营销传播硕士 | 华东政法大学-文化产业管理学士
+- 📱 联系：Email：Eazfan99@163.com | Tel:17374651500 
 
 
 
@@ -29,6 +29,7 @@ social: true  # includes social icons at the bottom of the page
 | 运营能力       | 内容运营（短视频/漫剧/图书IP） | 渠道管理（抖音/快手/B站） | 用户画像分析 | 流量矩阵搭建 |
 | 工具技能       | ![PPT](https://img.shields.io/badge/PPT-熟练-blue) ![Excel](https://img.shields.io/badge/Excel-数据分析-yellow) ![PS/Ai](https://img.shields.io/badge/PS%2FAi-设计制作-purple) |
 | 视频与动画     | ![Pr](https://img.shields.io/badge/Pr-视频剪辑-red) ![Ae/An](https://img.shields.io/badge/Ae%2FAn-动画制作-green) |
+
 
 
 
