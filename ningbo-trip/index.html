@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#19362f">
+  <title>宁波 · 两日三夜出片计划</title>
+  <style>
+    :root{
+      --ink:#17231f;--muted:#66736d;--paper:#f5f1e7;--card:#fffdf7;
+      --green:#19362f;--jade:#4d796a;--orange:#d86f3d;--gold:#d5ad68;
+      --line:rgba(25,54,47,.13);--shadow:0 18px 45px rgba(31,49,42,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);background:var(--paper);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+    button,a{font:inherit}
+    a{color:inherit}
+    .hero{position:relative;min-height:82vh;padding:28px clamp(22px,6vw,88px) 50px;color:#fff;overflow:hidden;background:linear-gradient(145deg,#102923 0%,#23483d 58%,#ba6540 160%)}
+    .hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(1px);opacity:.5}
+    .hero:before{width:620px;height:620px;right:-240px;top:-220px;background:radial-gradient(circle,rgba(213,173,104,.6),rgba(213,173,104,0) 66%)}
+    .hero:after{width:520px;height:190px;left:-80px;bottom:-90px;border:1px solid rgba(255,255,255,.22);box-shadow:0 0 0 34px rgba(255,255,255,.025),0 0 0 68px rgba(255,255,255,.018)}
+    .nav{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:18px;max-width:1180px;margin:auto}
+    .brand{font-weight:800;letter-spacing:.16em;font-size:14px}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border:1px solid rgba(255,255,255,.26);border-radius:999px;background:rgba(255,255,255,.09);backdrop-filter:blur(12px);font-size:13px}
+    .hero-content{position:relative;z-index:1;max-width:1180px;margin:12vh auto 0;display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:end}
+    .eyebrow{display:flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:.2em;font-size:12px;color:#dfc99e}
+    .eyebrow:before{content:"";width:34px;height:1px;background:#dfc99e}
+    h1{margin:20px 0 18px;font-family:"STSong","Songti SC",serif;font-size:clamp(48px,8vw,100px);line-height:.96;font-weight:500;letter-spacing:-.05em}
+    .hero-copy{max-width:650px;font-size:clamp(16px,2vw,20px);line-height:1.8;color:rgba(255,255,255,.78)}
+    .hero-copy strong{color:white}
+    .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .stat{padding:20px;border:1px solid rgba(255,255,255,.18);border-radius:18px;background:rgba(255,255,255,.08);backdrop-filter:blur(10px)}
+    .stat b{display:block;font-family:"STSong","Songti SC",serif;font-size:28px;font-weight:500;margin-bottom:4px}
+    .stat span{font-size:12px;color:rgba(255,255,255,.62)}
+    .wave{position:absolute;left:0;right:0;bottom:-1px;height:80px;background:var(--paper);clip-path:ellipse(64% 55% at 50% 100%)}
+    main{max-width:1180px;margin:auto;padding:44px clamp(18px,4vw,44px) 90px}
+    .notice{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start;padding:20px 22px;border:1px solid #e0d5be;border-radius:18px;background:#fff9e9;box-shadow:0 8px 26px rgba(84,67,29,.05)}
+    .notice .icon{font-size:24px}.notice b{display:block;margin-bottom:5px}.notice p{margin:0;color:#6c6048;line-height:1.7;font-size:14px}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin:66px 0 24px}
+    .section-head small{display:block;color:var(--orange);font-weight:750;letter-spacing:.16em;margin-bottom:8px}
+    h2{margin:0;font-family:"STSong","Songti SC",serif;font-size:clamp(30px,5vw,50px);font-weight:500}
+    .section-head p{max-width:520px;margin:0;color:var(--muted);line-height:1.7;font-size:14px;text-align:right}
+    .day-tabs{position:sticky;top:12px;z-index:10;display:flex;width:max-content;max-width:100%;gap:8px;padding:7px;margin:30px auto;border:1px solid var(--line);border-radius:999px;background:rgba(245,241,231,.88);backdrop-filter:blur(18px);box-shadow:0 8px 22px rgba(31,49,42,.08)}
+    .tab{border:0;background:transparent;color:var(--muted);padding:10px 17px;border-radius:999px;cursor:pointer;font-weight:700;white-space:nowrap}
+    .tab.active{background:var(--green);color:white;box-shadow:0 6px 14px rgba(25,54,47,.24)}
+    .day-panel{display:none;animation:rise .35s ease}.day-panel.active{display:block}
+    @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    .day-cover{position:relative;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;margin-bottom:24px;padding:30px;border-radius:28px;overflow:hidden;color:white;background:linear-gradient(125deg,#345c50,#1c3931)}
+    .day-cover.orange{background:linear-gradient(125deg,#9a4b2d,#d17444)}
+    .day-cover:after{content:"";position:absolute;width:230px;height:230px;right:-70px;top:-100px;border:1px solid rgba(255,255,255,.18);border-radius:50%;box-shadow:0 0 0 24px rgba(255,255,255,.025),0 0 0 48px rgba(255,255,255,.018)}
+    .day-cover h3{position:relative;z-index:1;margin:4px 0 8px;font-family:"STSong","Songti SC",serif;font-size:34px;font-weight:500}.day-cover p{position:relative;z-index:1;margin:0;color:rgba(255,255,255,.72)}
+    .weather{position:relative;z-index:1;text-align:right}.weather strong{display:block;font-size:25px}.weather span{font-size:12px;color:rgba(255,255,255,.7)}
+    .timeline{position:relative;margin-left:18px;padding-left:36px;border-left:1px solid rgba(25,54,47,.19)}
+    .stop{position:relative;margin-bottom:16px;padding:25px 26px;border:1px solid var(--line);border-radius:22px;background:var(--card);box-shadow:0 10px 30px rgba(31,49,42,.055)}
+    .stop:before{content:"";position:absolute;left:-44px;top:31px;width:13px;height:13px;border-radius:50%;background:var(--orange);border:4px solid var(--paper);box-shadow:0 0 0 1px var(--orange)}
+    .stop-top{display:flex;gap:18px;align-items:start;justify-content:space-between}.time{color:var(--orange);font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}.stop h4{margin:0 0 9px;font-size:20px}.stop p{margin:0;color:var(--muted);line-height:1.75;font-size:14px}
+    .chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:15px}.chip{padding:6px 10px;border-radius:999px;background:#edf2ee;color:#365c50;font-size:12px;font-weight:650}.chip.photo{background:#fff0e8;color:#a54c28}
+    .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .shot{min-height:170px;padding:22px;border-radius:22px;color:white;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow);background:linear-gradient(150deg,#24493f,#6e9889)}
+    .shot:nth-child(2){background:linear-gradient(150deg,#a94f31,#e09a68)}.shot:nth-child(3){background:linear-gradient(150deg,#324452,#718493)}
+    .shot .num{font-size:12px;letter-spacing:.18em;color:rgba(255,255,255,.62)}.shot h4{margin:18px 0 7px;font-family:"STSong","Songti SC",serif;font-size:23px;font-weight:500}.shot p{margin:0;color:rgba(255,255,255,.72);font-size:13px;line-height:1.55}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.info-card{padding:25px;border:1px solid var(--line);border-radius:22px;background:var(--card)}.info-card h3{margin:0 0 14px;font-size:18px}.info-card ul{margin:0;padding-left:20px;color:var(--muted);line-height:1.85;font-size:14px}
+    .checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.check{display:flex;align-items:center;gap:11px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--card);cursor:pointer;user-select:none}.check input{accent-color:var(--green);width:17px;height:17px}.check:has(input:checked){opacity:.6;text-decoration:line-through}
+    .transport{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.transport article{padding:21px;border-radius:20px;background:#e8eee9}.transport b{display:block;margin-bottom:8px}.transport p{margin:0;color:#586760;line-height:1.65;font-size:13px}
+    footer{padding:34px 20px 46px;text-align:center;color:#7d877f;font-size:13px;border-top:1px solid var(--line)}
+    .actions{display:flex;justify-content:center;gap:10px;margin-top:25px}.action{border:0;border-radius:999px;padding:11px 17px;background:var(--green);color:white;font-weight:700;cursor:pointer}.action.secondary{background:white;color:var(--green);border:1px solid var(--line)}
+    @media(max-width:760px){
+      .hero{min-height:auto;padding-bottom:110px}.nav .pill{display:none}.hero-content{margin-top:13vh;grid-template-columns:1fr;gap:35px}.stats{max-width:420px}.section-head{align-items:start;flex-direction:column}.section-head p{text-align:left}.day-cover{grid-template-columns:1fr}.weather{text-align:left}.shots,.transport{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}.checklist{grid-template-columns:1fr}.timeline{margin-left:7px;padding-left:25px}.stop{padding:21px}.stop:before{left:-33px}.stop-top{display:block}.time{display:block;margin-bottom:8px}.day-tabs{overflow:auto;justify-content:flex-start}.tab{padding:9px 13px}.hero h1{font-size:54px}}
+    @media print{.hero{min-height:auto;padding:30px;color:#111;background:white}.wave,.day-tabs,.actions{display:none}.hero-content{margin-top:40px;grid-template-columns:1fr}.hero-copy,.stat span{color:#555}.stat{border-color:#ccc}.day-panel{display:block!important}.day-panel+.day-panel{page-break-before:always}.stop{break-inside:avoid;box-shadow:none}.section-head{margin-top:36px}body{background:white}main{padding-top:20px}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav"><div class="brand">NINGBO · PHOTO ESCAPE</div><div class="pill">📍 住在东部新城附近 · 每天 10:30 出门</div></nav>
+    <div class="hero-content">
+      <div>
+        <div class="eyebrow">Oct 01—04 · 2026</div>
+        <h1>宁波<br>两日三夜</h1>
+        <p class="hero-copy">不赶早，不集邮。把行程压缩成 <strong>湖、城、夜</strong> 三个画面，下午拍柔光，傍晚等蓝调，雨天也有好照片。</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>10:30</b><span>每天建议出门</span></div>
+        <div class="stat"><b>2 条</b><span>低折返主线路</span></div>
+        <div class="stat"><b>6 组</b><span>核心出片场景</span></div>
+        <div class="stat"><b>20–26℃</b><span>薄外套＋雨伞</span></div>
+      </div>
+    </div>
+    <div class="wave"></div>
+  </header>
+
+  <main>
+    <div class="notice">
+      <div class="icon">☂️</div>
+      <div><b>天气策略</b><p>10 月 2 日优先安排东钱湖户外线；10 月 3 日可能有雨，天一阁回廊、月湖石桥和老外滩湿地倒影反而更容易出片。9 月 30 日再查看一次实时天气。</p></div>
+    </div>
+
+    <div class="day-tabs" role="tablist" aria-label="行程日期">
+      <button class="tab active" data-day="arrival">10/1 抵达</button>
+      <button class="tab" data-day="day1">10/2 湖景</button>
+      <button class="tab" data-day="day2">10/3 老城</button>
+      <button class="tab" data-day="leave">10/4 离开</button>
+    </div>
+
+    <section id="arrival" class="day-panel active">
+      <div class="day-cover"><div><small>THURSDAY · ARRIVAL</small><h3>深夜抵达，只做一件事：睡好</h3><p>不安排夜游，为第二天留足状态。</p></div><div class="weather"><strong>23:00</strong><span>预计抵达宁波</span></div></div>
+      <div class="timeline">
+        <article class="stop"><div class="stop-top"><span class="time">23:00—00:00</span><div><h4>宁波站 / 栎社机场 → 住处</h4><p>直接叫网约车。宁波站预计 20–35 分钟；机场预计 35–50 分钟。提前向房东确认门禁及网约车应定位的小区入口。</p><div class="chips"><span class="chip">不乘末班地铁</span><span class="chip">提前确认门禁</span></div></div></div></article>
+        <article class="stop"><div class="stop-top"><span class="time">00:00</span><div><h4>洗漱、充电、检查预约</h4><p>充好手机与充电宝；确认韩岭路况、天一阁预约，以及透明雨伞是否带好。</p></div></div></article>
+      </div>
+    </section>
+
+    <section id="day1" class="day-panel">
+      <div class="day-cover"><div><small>FRIDAY · LAKESIDE</small><h3>东钱湖松弛感拍照日</h3><p>韩岭古街 → 湖边草坪 → 日落蓝调 → 东部新城夜景</p></div><div class="weather"><strong>多云 20–25℃</strong><span>湖边有风 · 带薄外套</span></div></div>
+      <div class="timeline">
+        <article class="stop"><div class="stop-top"><span class="time">10:30</span><div><h4>从住处出发</h4><p>路况正常可网约车直达韩岭；若环湖道路拥堵，改为打车到东钱湖地铁站，再换景区接驳。</p><div class="chips"><span class="chip">预计 45–70 分钟</span><span class="chip">国庆不建议自驾</span></div></div></div></article>
+        <article class="stop"><div class="stop-top"><span class="time">11:30—12:40</span><div><h4>韩岭午餐</h4><p>建议雪菜黄鱼、白蟹炒年糕、宁波烤菜和时蔬。海鲜先问单价、重量和计价方式。</p></div></div></article>
+        <article class="stop"><div class="stop-top"><span class="time">12:40—14:40</span><div><h4>韩岭老街＋美术馆外围</h4><p>中午以白墙转角、石板小巷、屋檐和建筑线条为主；人物用 2× 焦段，避开杂乱店招。</p><div class="chips"><span class="chip photo">白墙黛瓦</span><span class="chip photo">现代建筑</span><span class="chip">0.5× 建筑 / 2× 人像</span></div></div></div></article>
+        <article class="stop"><div class="stop-top"><span class="time">14:40—15:30</span><div><h4>湖边咖啡＋转场</h4><p>休息 30 分钟，并查看“逸舟钱湖”当日船班；船班不合适就用接驳公交或短途网约车。</p></div></div></article>
+        <article class="stop"><div class="stop-top"><span class="time">15:30—18:05</span><div><h4>日月坡 / 茶亭自由之滨</h4><p>15:30 拍草坪和树，16:30 后拍湖边逆光，17:20 左右等剪影，日落后再留 15 分钟拍蓝调。人太多则改去国际湖泊之家。</p><div class="chips"><span class="chip photo">草坪</span><span class="chip photo">棕榈公路</span><span class="chip photo">湖面剪影</span></div></div></div></article>
+        <article class="stop"><div class="stop-top"><span class="time">18:15—21:00</span><div><h4>东部新城晚餐＋夜景</h4><p>返回阪急、东部银泰或文化广场用餐。体力允许再拍文化广场水面倒影和东部新城高楼夜景。</p></div></div></article>
+      </div>
+    </section>
+
+    <section id="day2" class="day-panel">
+      <div class="day-cover orange"><div><small>SATURDAY · OLD TOWN</small><h3>书香老城与三江夜色</h3><p>天一阁 → 鼓楼 → 月湖 → 老外滩蓝调</p></div><div class="weather"><strong>有雨 20–26℃</strong><span>透明伞是拍照道具</span></div></div>
+      <div class="timeline">
+        <article class="stop"><div class="stop-top"><span class="time">10:30</span><div><h4>网约车前往天一阁</h4><p>预约约 11:30 的入场时段。从住处直达正常约 25–35 分钟，国庆按 40–50 分钟预留。</p></div></div></article>
+        <article class="stop"><div class="stop-top"><span class="time">11:20—13:30</span><div><h4>天一阁博物院</h4><p>范氏故居 → 宝书楼 → 尊经阁 → 秦氏支祠 → 万工轿 → 南园。用月洞门框景；雨天拍回廊、石板倒影与撑伞动态。</p><div class="chips"><span class="chip photo">月洞门</span><span class="chip photo">园林回廊</span><span class="chip photo">雨后倒影</span></div></div></div></article>
+        <article class="stop"><div class="stop-top"><span class="time">13:40—15:00</span><div><h4>鼓楼午餐</h4><p>仓桥面结面、黄鱼面、馄饨或宁波汤圆。鼓楼商业街停留 20–30 分钟即可。</p></div></div></article>
+        <article class="stop"><div class="stop-top"><span class="time">15:00—16:20</span><div><h4>月湖精华段</h4><p>银台第一带 → 湖岸 → 柳汀 → 烟屿桥。小雨适合柔光和倒影；大雨则压缩至 30 分钟。</p><div class="chips"><span class="chip photo">石桥撑伞</span><span class="chip photo">白墙湖面</span></div></div></div></article>
+        <article class="stop"><div class="stop-top"><span class="time">16:30—18:40</span><div><h4>老外滩蓝调时刻</h4><p>江北天主教堂外围 → 石库门街区 → 江边 → 外滩大桥视角。16:30 拍建筑，17:20 拍蓝调，入夜后拍江面灯光。</p><div class="chips"><span class="chip photo">教堂侧景</span><span class="chip photo">石库门纵深</span><span class="chip photo">霓虹湿地</span></div></div></div></article>
+        <article class="stop"><div class="stop-top"><span class="time">18:45—20:30</span><div><h4>宁波菜晚餐 → 返回住处</h4><p>可点宁式鳝丝、苔菜拖黄鱼、奉化芋艿头和咸齑年糕汤。回程直接网约车最省心。</p></div></div></article>
+      </div>
+    </section>
+
+    <section id="leave" class="day-panel">
+      <div class="day-cover"><div><small>SUNDAY · DEPARTURE</small><h3>睡醒、早餐、从容离开</h3><p>上午不加景点，给国庆交通留出余量。</p></div><div class="weather"><strong>12:00</strong><span>计划离开宁波</span></div></div>
+      <div class="grid-2">
+        <article class="info-card"><h3>🚄 如果 12:00 高铁发车</h3><ul><li>08:45–09:30 起床、早餐</li><li>09:40 整理行李</li><li>10:10 前出门</li><li>10:45 前抵达宁波站</li></ul></article>
+        <article class="info-card"><h3>✈️ 如果 12:00 航班起飞</h3><ul><li>08:15 左右起床</li><li>09:00 前出门</li><li>10:00 前抵达栎社机场</li><li>国庆按实际航司要求值机</li></ul></article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><div><small>PHOTO NOTES</small><h2>三组必拍画面</h2></div><p>不追求景点数量，优先把光线、背景和人物状态拍好。</p></div>
+      <div class="shots">
+        <article class="shot"><span class="num">01 · LAKESIDE</span><div><h4>东钱湖逆光</h4><p>人物背向湖面侧站，降低曝光，保留天空层次；日落后别急着走。</p></div></article>
+        <article class="shot"><span class="num">02 · GARDEN</span><div><h4>天一阁框景</h4><p>用门洞和回廊遮住游客，2× 焦段拍半身；不使用闪光灯。</p></div></article>
+        <article class="shot"><span class="num">03 · BLUE HOUR</span><div><h4>老外滩蓝调</h4><p>天空尚蓝、街灯刚亮时最出片；用 1× 夜景，不要高倍数码变焦。</p></div></article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><div><small>WARDROBE</small><h2>穿搭与交通</h2></div><p>湖边偏浅色、老城偏沉稳；住处到景区以网约车为主，返程视体力选地铁。</p></div>
+      <div class="transport">
+        <article><b>东钱湖</b><p>白、米、浅蓝、牛仔。避免全身绿色；薄外套应对湖风。</p></article>
+        <article><b>天一阁</b><p>酒红、墨绿、黑白或新中式。透明雨伞比花伞更干净。</p></article>
+        <article><b>夜景</b><p>黑、灰、深蓝和有廓形的外套。另一部手机白屏可临时补光。</p></article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><div><small>BEFORE YOU GO</small><h2>出发前清单</h2></div><p>勾选状态会保存在当前浏览器中。</p></div>
+      <div class="checklist" id="checklist">
+        <label class="check"><input type="checkbox" data-id="gate">确认小区深夜门禁与入口</label>
+        <label class="check"><input type="checkbox" data-id="tianyi">预约天一阁约 11:30 场</label>
+        <label class="check"><input type="checkbox" data-id="boat">查看“逸舟钱湖”当日船班</label>
+        <label class="check"><input type="checkbox" data-id="food">预约两顿正式晚餐</label>
+        <label class="check"><input type="checkbox" data-id="weather">9 月 30 日复查天气</label>
+        <label class="check"><input type="checkbox" data-id="gear">带透明伞、充电宝、薄外套</label>
+      </div>
+      <div class="actions"><button class="action" onclick="window.print()">打印 / 存为 PDF</button><button class="action secondary" id="reset">重置勾选</button></div>
+    </section>
+  </main>
+
+  <footer>NINGBO · 2026 国庆出片计划　｜　以景区当日公告、实时路况和天气为准</footer>
+
+  <script>
+    const tabs=[...document.querySelectorAll('.tab')], panels=[...document.querySelectorAll('.day-panel')];
+    tabs.forEach(tab=>tab.addEventListener('click',()=>{
+      tabs.forEach(x=>x.classList.toggle('active',x===tab));
+      panels.forEach(x=>x.classList.toggle('active',x.id===tab.dataset.day));
+      document.querySelector('.day-tabs').scrollIntoView({behavior:'smooth',block:'start'});
+    }));
+    const boxes=[...document.querySelectorAll('#checklist input')];
+    try{const saved=JSON.parse(localStorage.getItem('nb-trip-checks')||'{}');boxes.forEach(b=>b.checked=!!saved[b.dataset.id])}catch(e){}
+    boxes.forEach(b=>b.addEventListener('change',()=>{const state={};boxes.forEach(x=>state[x.dataset.id]=x.checked);localStorage.setItem('nb-trip-checks',JSON.stringify(state))}));
+    document.getElementById('reset').addEventListener('click',()=>{boxes.forEach(b=>b.checked=false);localStorage.removeItem('nb-trip-checks')});
+  </script>
+</body>
+</html>
